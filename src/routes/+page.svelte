@@ -1,8 +1,13 @@
 <script lang="ts">
+	import MarkdownRenderer from '$lib/components/markdown/MarkdownRenderer.svelte';
+	import type { PageProps } from './$types';
+
+	const { data }: PageProps = $props();
+	const landing = $derived(data.landing);
 </script>
 
 <article class="prose w-216 max-w-216 px-2 py-20">
-	<h1>Hello World</h1>
+	<MarkdownRenderer {landing} />
 </article>
 
 <style>
