@@ -7,7 +7,7 @@
 </script>
 
 <article class="prose w-216 max-w-216 px-2 py-20">
-	<MarkdownRenderer {landing} />
+	<MarkdownRenderer post={landing.content} />
 </article>
 
 <style>
